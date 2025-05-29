@@ -1,10 +1,13 @@
-
+import React from 'react';        
+import NewProject from "./projecttimeline/newproject"
+import TimeLine from './projecttimeline/timeline';
 
 function App() {
 
   return (
-    <div className="text-4xl font-bold">
-        welcome
+    <div className="App ">
+        {/* <NewProject/> */}
+        <TimeLine/>
     </div>
   )
 }
