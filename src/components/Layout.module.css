@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f7f7fa;
+  padding: 24px 40px 16px 40px;
+  border-bottom: 1px solid #ececec;
+}
+
+.title {
+  font-size: 25px;
+  color: #6E39CB;
+  font-weight: bold;
+  font-family: 'Lato', sans-serif;
+}
+
+.main {
+  padding: 0;
+}

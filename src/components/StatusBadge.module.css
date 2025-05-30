@@ -1,0 +1,18 @@
+.inStock {
+  background: #e5fbee;
+  color: #27bf6c;
+  border-radius: 8px;
+  padding: 4px 12px;
+  font-size: 13px;
+  font-weight: 500;
+  display: inline-block;
+}
+.outOfStock {
+  background: #ffeaea;
+  color: #e57a7a;
+  border-radius: 8px;
+  padding: 4px 12px;
+  font-size: 13px;
+  font-weight: 500;
+  display: inline-block;
+}

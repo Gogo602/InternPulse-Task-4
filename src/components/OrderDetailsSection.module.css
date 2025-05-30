@@ -1,0 +1,215 @@
+.container {
+  position: absolute;
+  width: 1132px;
+  min-height: 745px;
+  left: 248px;
+  top: 186px;
+  background: #fff;
+  box-shadow: 0px 0px 4px rgba(0,0,0,0.15);
+  border-radius: 10px;
+  padding: 32px 30px 40px 30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+.headerRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 18px;
+}
+.orderDetailsTitle {
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  font-size: 20.25px;
+  color: #3A3541;
+  margin-bottom: 7px;
+}
+.orderMeta {
+  font-family: 'Lato', sans-serif;
+  font-size: 14.2px;
+  color: #3A3541;
+  line-height: 1.6;
+}
+.metaValue {
+  font-weight: 500;
+  color: #6E39CB;
+}
+.invoiceBtn {
+  background: #6E39CB;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 7px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 5px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px 30px;
+  margin-top: 10px;
+}
+.card {
+  background: #fff;
+  box-shadow: 0px 0px 4px rgba(0,0,0,0.09);
+  border-radius: 8px;
+  padding: 20px 24px 18px 24px;
+  min-height: 170px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.sectionTitle {
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  font-size: 20.25px;
+  color: #3A3541;
+  margin-bottom: 12px;
+}
+.productRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  position: relative;
+}
+.productImg {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.productName {
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #3A3541;
+  margin-bottom: 2px;
+}
+.productPrice {
+  font-size: 14.22px;
+  color: #3A3541;
+  margin-bottom: 2px;
+}
+.productNote {
+  font-size: 12.64px;
+  color: #3A3541;
+  margin-bottom: 2px;
+}
+.productStatus {
+  font-size: 14.22px;
+  color: #3A3541;
+  margin-top: 4px;
+  font-weight: 400;
+}
+.helpIcon {
+  color: #89868D;
+  font-size: 18px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.billingRow {
+  display: flex;
+  justify-content: space-between;
+}
+.billingName {
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #3A3541;
+  margin-bottom: 4px;
+}
+.billingLine {
+  font-size: 14.22px;
+  color: #3A3541;
+  margin-bottom: 3px;
+}
+.billingLine span {
+  font-weight: 400;
+  color: #3A3541;
+}
+.paymentBox {
+  font-family: 'Lato', sans-serif;
+  color: #3A3541;
+}
+.cardTypeRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.paymentCardType {
+  color: #3A3541;
+}
+.paymentCardIcon {
+  width: 39px;
+  height: 24px;
+  object-fit: contain;
+}
+.paymentRow {
+  font-size: 14.22px;
+  color: #89868D;
+  margin-bottom: 2px;
+}
+.paymentCardHolder {
+  font-size: 14.22px;
+  color: #3A3541;
+  margin-top: 8px;
+}
+.summaryLine {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.22px;
+  color: #89868D;
+  margin-bottom: 5px;
+}
+.summaryTotal {
+  font-size: 18px;
+  color: #3A3541;
+  font-weight: 500;
+}
+.reviewBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+}
+.reviewText {
+  font-size: 14.22px;
+  color: #89868D;
+  text-align: center;
+}
+.stars {
+  color: #6E39CB;
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+.submitBtn {
+  background: none;
+  border: none;
+  color: #6E39CB;
+  font-family: 'Lato', sans-serif;
+  font-size: 14.22px;
+  cursor: pointer;
+  margin-top: 3px;
+}
+@media (max-width: 900px) {
+  .container {
+    left: 0;
+    width: 100vw;
+    min-width: unset;
+    padding: 12px 4px;
+    position: static;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 18px 0;
+  }
+}
