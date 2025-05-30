@@ -1,12 +1,10 @@
-
-
+import AnalyticsPage from "./components/AnalyticsPage";
 function App() {
-
   return (
-    <div className="text-4xl font-bold">
-        welcome
-    </div>
-  )
+    <>
+      <AnalyticsPage />
+    </>
+  );
 }
 
-export default App
+export default App;
