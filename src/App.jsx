@@ -6,8 +6,8 @@ function App() {
 
   return (
     <div className="App ">
-        {/* <NewProject/> */}
-        <TimeLine/>
+        
+        <p>app</p>
     </div>
   )
 }
