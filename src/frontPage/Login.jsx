@@ -1,4 +1,6 @@
 import "/images/woman 1.png";
+import google from "./Googlee.png";
+import facebook from './Facebook.png';
 const Login = () => {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 w-screen h-screen  m-0 p-0">
@@ -45,10 +47,12 @@ const Login = () => {
           >
             Sign in
           </button>
-          <button className="border-2 border-gray-200 rounded-full text-[16px] py-2 mb-2 h-[46px]">
+          <button className="flex items-center justify-center gap-2 border-2 border-gray-200 rounded-full text-[16px] py-2 mb-2 h-[46px]">
+            <img src={google} alt="" />
             <a href="google.com">Sign in with Google</a>
           </button>
-          <button className="border-2 border-gray-200 rounded-full text-[16px] py-2 mb-2 h-[46px]">
+          <button className="flex items-center justify-center gap-2 border-2 border-gray-200 rounded-full text-[16px] py-2 mb-2 h-[46px]">
+            <img src={facebook} alt="" />
             <a href="m.facebook.com">Sign in with Facebook</a>
           </button>
           <p className="self-center text-[13px] text-gray-500">
