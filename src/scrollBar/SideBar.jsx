@@ -20,7 +20,7 @@ function SideBar() {
           <SidebarItem item={item} key={key} hidden={'hidden'}/>
         ))}
       </div>
-      <div className=" items text-[#3A3541] bg-[#6E39CB] text-[1.2em] flex w-[80%] rounded-md">
+      <div className="hidden sm:flex items text-[#3A3541] bg-[#6E39CB] text-[1.2em] w-[80%] rounded-md">
         <div className="basis-[90%] w-full py-2 gap-2 flex rounded-md items-center justify-center">
           <div className="">
           <img width={35} src={user} alt="" />
