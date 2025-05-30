@@ -1,0 +1,17 @@
+.badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 14.2px;
+  line-height: 17px;
+  color: #89868D;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
