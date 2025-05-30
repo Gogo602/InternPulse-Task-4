@@ -1,15 +1,15 @@
 import {BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Header from './components/Header'
-import ProfileOverview from './components/profile/ProfileOverview'
+import ProfileOverview from './components/profile/overview/ProfileOverview'
+import Teams from './components/profile/teams/Teams'
 
 
 function App() {
 
   return (
     <div className='min-h-screen bg-black/10'>
-      <Header />
       <Routes>
         <Route path='/' element={<ProfileOverview />}/>
+        <Route path='/teams' element={<Teams />}/>
       </Routes>
     </div>
   )
