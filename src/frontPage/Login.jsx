@@ -1,7 +1,7 @@
+import React from 'react'
 import "/images/woman 1.png";
 import google from "./Googlee.png";
 import facebook from './Facebook.png';
-import React from 'react'
 
 
 const Login = () => {

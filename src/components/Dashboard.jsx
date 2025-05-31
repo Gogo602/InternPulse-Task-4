@@ -6,7 +6,6 @@ import ImpressionCard from './ImpressionCard';
 import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts'
 
 
-
 function App() {
   return (
     <div className="min-h-screen bg-gray-100 p-4 lg:p-8"> {/* Increased padding for larger screens */}
