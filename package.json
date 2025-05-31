@@ -1,5 +1,5 @@
 {
-  "name": "react",
+  "name": "analytics",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,12 +11,12 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
-    "@tailwindcss/vite": "^4.1.7",
+    "lucide-react": "^0.511.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "recharts": "^2.15.3",
     "react-router-dom": "^7.6.1",
-    "tailwindcss": "^4.1.7"
+    "recharts": "^2.15.3"
   },
   "devDependencies": {
     "@eslint/js": "^9.25.0",
