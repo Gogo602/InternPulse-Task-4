@@ -9,6 +9,7 @@ import SignUp from './frontPage/SignUp'
 import Dashboard from './components/Dashboard'
 
 
+
 const App = () => {
     const router = createBrowserRouter(
     createRoutesFromElements(
