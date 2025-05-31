@@ -60,15 +60,7 @@ const NewProject = () => {
           </label>
          </div>
 
-          {/* <div className='grid justify-center text-center p-4 border-purple-700 border-dashed border-2 rounded'>
-            <p className='text-purple-700 text-xl grid justify-center'><FaCloudDownloadAlt /></p>
-            <label htmlFor="image" className='text-md cursor-pointer'>
-              <span className='text-purple-700'>click to upload</span> or drag and drop
-            </label>
-            <p className='text-gray-500 text-sm'>SVG, PNG, JPG OR GIF</p>
-            <p className='text-gray-500 text-sm'>max, 800x400px</p>
-            <input id="image" name="image" type="file" accept="image/*" required className="hidden" />
-          </div> */}
+         
 
           <div className='flex justify-center md:justify-end mt-8 gap-2 md:gap-4'>
             <button className='py-1 md:py-2 border-purple-700 border md:text-xl font-light rounded md:w-44 text-center md:px-4 px-2 text-purple-700'>Cancel</button>
