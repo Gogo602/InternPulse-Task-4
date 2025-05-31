@@ -1,6 +1,9 @@
 import "/images/woman 1.png";
 import google from "./Googlee.png";
 import facebook from './Facebook.png';
+import React from 'react'
+
+
 const Login = () => {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 w-screen h-screen  m-0 p-0">
