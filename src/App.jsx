@@ -11,6 +11,10 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import NewProduct from './Products/Newproduct/Newproduct';
 import EditProduct from './Products/Editproduct/Editproduct';
+import {BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import ProfileOverview from './components/profile/overview/ProfileOverview'
+import Teams from './components/profile/teams/Teams'
+import AllProjects from './components/profile/allProjects/AllProjects'
 
 
 const App = () => {
