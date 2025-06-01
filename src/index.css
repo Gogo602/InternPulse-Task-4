@@ -40,6 +40,39 @@ Poppins
 
 @import "tailwindcss";
 
+
+body {
+  background-color: #f3f4f6; /* gray-100 */
+}
+
+@media screen and (max-width: 1024px) {
+  #progress-indicator span,
+  #progress-indicator hr {
+    width: 20px ;
+    height: 20px ;
+    font-size: 0.9rem ;
+  }
+  #progress-indicator hr {
+    width: 50px ;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  #progress-indicator {
+    gap: 10px;
+  }
+  #progress-indicator span {
+    width: 18px ;
+    height: 18px ;
+    font-size: 0.8rem ;
+  }
+  #progress-indicator hr {
+    width: 20px ;
+  }
+  h1{
+    @apply text-2xl font-bold
+  }
+}
 .lato{
     font-family: "Lato", sans-serif;
   font-weight: 400;

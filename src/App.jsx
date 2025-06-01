@@ -7,7 +7,10 @@ import {
 import Login from './frontPage/Login'
 import SignUp from './frontPage/SignUp'
 import Dashboard from './components/Dashboard'
-
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import NewProduct from './Products/Newproduct/Newproduct';
+import EditProduct from './Products/Editproduct/Editproduct';
 
 
 const App = () => {
