@@ -10,7 +10,7 @@ const SideBar = () => {
 
   return (
     <div
-      className="hidden sm:w-60 h-screen sm:flex flex-col items-center
+      className=" hidden sm:w-60 h-screen sm:flex flex-col items-center
         py-5 sm:py-10 gap-10 overflow-y-scroll"
         style={{scrollbarWidth: 'none' }}
     >

@@ -41,7 +41,7 @@ import OrderDetailsPage from "./pages/OrderDetails/OrderDetailsPage";
 const App = () => {
   return (
     <div className='flex items-center'>
-      <div className='fixed min-h-screen -mt-210'>
+      <div className='fixed min-h-screen top-0  left-0'>
         <SideBar />
       </div>
       <div>

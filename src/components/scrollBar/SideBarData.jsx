@@ -1,10 +1,10 @@
-// import HomeIcon from "@mui/icons-material/Home";
-// import FileOpenIcon from "@mui/icons-material/FileOpen";
-// import AppsIcon from "@mui/icons-material/Apps";
-// import StoreIcon from "@mui/icons-material/Store";
-// import VerifiedUserIcon from "@mui/icons-material/VerifiedUser";
-
-import { FaAppStoreIos, FaHome, FaOpencart, FaStore, FaUniversity } from "react-icons/fa";
+import {
+  FaAppStoreIos,
+  FaHome,
+  FaOpencart,
+  FaStore,
+  FaUniversity,
+} from "react-icons/fa";
 
 export const SideBarData = [
   {
@@ -19,7 +19,7 @@ export const SideBarData = [
         title: "Analytics",
         path: "/analytics",
       },
-    ]
+    ],
   },
   {
     title: "Pages",
