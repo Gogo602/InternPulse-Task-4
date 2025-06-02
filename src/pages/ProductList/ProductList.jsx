@@ -1,5 +1,5 @@
 import React from "react";
-import { useOutletContext } from "react-router-dom";
+// import { useOutletContext } from "react-router-dom";
 import styles from "./ProductList.module.css";
 import StatusBadge from "../../components/StatusBadge";
 
@@ -127,11 +127,11 @@ const initialProducts = [
 ];
 
 export default function ProductList() {
-  const { search } = useOutletContext();
+  // const { search } = useOutletContext();
 
-  const filteredProducts = initialProducts.filter((product) =>
-    product.name.toLowerCase().includes(search.toLowerCase())
-  );
+  // const filteredProducts = initialProducts.filter((product) =>
+  //   product.name.toLowerCase().includes(search.toLowerCase())
+  // );
 
   return (
     <div className={styles.container}>
@@ -148,7 +148,7 @@ export default function ProductList() {
             </tr>
           </thead>
           <tbody>
-            {filteredProducts.map((product) => (
+            {initialProducts.map((product) => (
               <tr key={product.id}>
                 <td className={styles.productCell}>
                   <img src={product.avatar} alt={product.name} className={styles.avatar} />

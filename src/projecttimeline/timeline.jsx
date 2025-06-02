@@ -18,7 +18,7 @@ const handleColorChange = () => {
 
     return (
 
-        <div className= ' bg-[#EFEEEE] p-4 lg:py-4 lg:px-8 md:px-6 md:py-6 ml-60'>
+        <div className= ' bg-[#EFEEEE] p-4 lg:py-4 lg:px-8 md:px-6 md:py-6 md:ml-60'>
             {/* ==============================Header Section================================ */}
             <div className='md:flex md:gap-10 lg:gap-40 items-center p-2'>
                 <h2 className='text-purple-700 text-xl md:text-xl lg:text-3xl font-bold pb-2 md:pb-0'>Project/New project</h2>

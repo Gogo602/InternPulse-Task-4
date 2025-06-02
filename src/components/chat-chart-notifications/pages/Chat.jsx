@@ -33,7 +33,7 @@ const handleUserSelect = (id) => {
 
  
   return (
-    <div className='flex gap-6 md:flex-row flex-col pb-20 ml-62'>
+    <div className='flex gap-6 md:flex-row flex-col pb-20 md:ml-62'>
         <div className='md:w-[30%] flex flex-col gap-4'>
             <div>
                 <input type="text" 

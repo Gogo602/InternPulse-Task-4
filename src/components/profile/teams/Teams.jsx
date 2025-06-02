@@ -11,7 +11,7 @@ const Teams = () => {
       <Header
         name='Profile/Teams'
       />
-      <div className='bg-white rounded-md mx-3 px-5 py-10 ml-62'>
+      <div className='bg-white rounded-md mx-3 px-5 py-10 md:ml-62'>
           <div className='space-y-5'>
             <TeamManagement />
             <hr className='text-gray-400'/>

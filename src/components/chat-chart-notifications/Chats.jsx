@@ -29,7 +29,7 @@ const Chats = () => {
   };
 
   return (
-    <div className="md:w-[600px] md:h-[600px] mx-auto mt-10  rounded shadow p-4 flex flex-col">
+    <div className="md:w-[600px]  md:h-[600px] mx-auto mt-10  rounded shadow p-4 flex flex-col">
       <div className="flex-1 overflow-y-auto mb-4 space-y-2">
         {messages.map((msg, idx) => {
 

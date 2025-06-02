@@ -19,7 +19,7 @@ const ProfileOverview = () => {
       <Header
         name='Profile Overview'
       />
-      <div className='grid grid-cols-1 gap-5 px-5 pb-5 lg:grid-cols-5 ml-60'>
+      <div className='grid grid-cols-1 gap-5 px-5 pb-5 lg:grid-cols-5 md:ml-60'>
         <div className='col-span-4 space-y-5'>
             <div className='grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3'>
               <Card 

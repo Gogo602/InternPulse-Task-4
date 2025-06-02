@@ -3,7 +3,7 @@ import "./styles.css"
 
 export const PricingPage = () => {
 	return (
-		<section className='font-Lato bg-background flex flex-col p-[1rem] gap-[2rem] max-w-[71rem] items-center mx-auto min-md:items-start ml-60'>
+		<section className='font-Lato bg-background flex flex-col p-[1rem] gap-[2rem] max-w-[71rem] items-center mx-auto min-md:items-start md:ml-60'>
 			<div className='inline-flex flex-col min-lg:gap-[6.25rem] min-md:gap-[3.125rem] min-md:flex-row min-md:items-center'>
 				<h2 className='text-[1.60188rem] text-primary font-[700]'>
 					Pricing page

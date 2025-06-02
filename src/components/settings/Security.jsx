@@ -2,7 +2,7 @@
 
 export default function SecuritySetting() {
     return (
-      <div className="min-h-screen bg-gray-100 font-inter p-4 sm:p-8 ml-60">
+      <div className="min-h-screen bg-gray-100 font-inter p-4 sm:p-8 md:ml-60">
         <div className="w-full max-w-6xl mx-auto">
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-8 text-center sm:text-left">
             Security Settings

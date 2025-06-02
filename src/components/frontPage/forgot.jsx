@@ -1,9 +1,9 @@
 import React from "react";
-import { BrowserRouter as Router, NavLink } from "react-router-dom";
+import { BrowserRouter as Router, NavLink, Link } from "react-router-dom";
 import "/images/woman 1.png";
 const Forgot = () => {
   return (
-    <div className="w-screen h-screen grid place-items-center bg-[#F4F5F9]">
+    <div className="w-screen h-screen grid place-items-center bg-[#F4F5F9] md:ml-60">
       <form
         action={console.log("mr")}
         className="flex flex-col items-center justify-center gap-2 w-100 max-w-[90%] sm:w-[730px] sm:h-[515px] h-70 rounded-2xl bg-white"
@@ -38,9 +38,9 @@ const Forgot = () => {
         >
           Reset Password
         </button>
-        <a href="./SignUp" className="text-[14px] text-[#6E39CB]">
+        <Link to="/authentication" className="text-[14px] text-[#6E39CB]">
           Back to login
-        </a>
+        </Link>
       </form>
     </div>
   );

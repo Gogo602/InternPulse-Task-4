@@ -3,7 +3,7 @@ import "./styles.css"
 
  const Calendar = () => {
 	return (
-		<section className='flex justify-center gap-[2rem] font-Lato p-[1rem] bg-background ml-60'>
+		<section className='flex justify-center gap-[2rem] font-Lato p-[1rem] bg-background md:ml-60'>
 			<div className='calendar-col1 bg-surface-white'>
 				<p className='text-dark text-[1rem] font-[500]'>Details Day</p>
 				<p className='text-[0.88875rem] text-light'>

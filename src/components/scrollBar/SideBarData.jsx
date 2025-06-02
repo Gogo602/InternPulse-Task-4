@@ -176,6 +176,6 @@ export const SideBarData = [
   {
     title: "Authentication",
     icon: <FaUniversity />,
-    path: "/Authentication",
+    path: "/authentication",
   },
 ];

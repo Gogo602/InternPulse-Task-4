@@ -10,8 +10,9 @@ const SideBar = () => {
 
   return (
     <div
-      className="sm:w-60 fixed h-[200%] flex flex-col items-center
-        py-5 sm:py-10 gap-10 bg-white  z-100"
+      className="hidden sm:w-60 h-screen sm:flex flex-col items-center
+        py-5 sm:py-10 gap-10 overflow-y-scroll"
+        style={{scrollbarWidth: 'none' }}
     >
       <div className="w-15 sm:w-20">
         <img src={logo} alt="logo" />

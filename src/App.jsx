@@ -3,6 +3,8 @@ import {
   Routes
 } from 'react-router-dom'
 import SignUp from './components/frontPage/SignUp'
+import Login from './components/frontPage/Login'
+import Forgot from './components/frontPage/forgot'
 import Dashboard from './components/dashboard/Dashboard'
 import SideBar from './components/scrollBar/SideBar'
 import AnalyticsPage from './components/analytics/AnalyticsPage';
@@ -28,9 +30,10 @@ import Media from './components/Products/Newproduct/Media';
 import ProductInfo from './components/Products/Newproduct/ProductInfo';
 import Social from './components/Products/Newproduct/Social';
 import Pricing from './components/Products/Newproduct/Pricing';
+import ProductListPage from './pages/ProductList/ProductListPage';
+import OrderListPage from './pages/OrderList/OrderListPage';
+import OrderDetailsPage from "./pages/OrderDetails/OrderDetailsPage";
 // import Chart from './components/chat-chart-notifications/pages/Chart'
-
-
 
 
 
@@ -38,13 +41,17 @@ import Pricing from './components/Products/Newproduct/Pricing';
 const App = () => {
   return (
     <div className='flex items-center'>
-      <SideBar />
+      <div className='fixed min-h-screen -mt-210'>
+        <SideBar />
+      </div>
       <div>
         <Routes>
           <Route path="/" element={<Dashboard />} />
           <Route path="/Reports" element={<Reports />} />
           <Route path="/Users" element={<Users />} />
-          <Route path='/signup' element={<SignUp />} />
+          <Route path='/authentication' element={<SignUp />} />
+          <Route path='/Signin' element={<Login />} />
+          <Route path='/forgot-password' element={<Forgot/>}/>
           <Route path='/dashboard' element={<Dashboard />} />
           <Route path='/analytics' element={<AnalyticsPage />} />
           <Route path='/profileoverview' element={<ProfileOverview/>}/>
@@ -71,7 +78,9 @@ const App = () => {
             <Route />
           </Route>
           <Route path="/edit-product" element={<Editproduct />} />
-          
+          <Route path="/product-list" element={<ProductListPage />} />
+          <Route path='/order-list' element={<OrderListPage/>}/>
+          <Route path="/order-detail" element={<OrderDetailsPage />} />
           {/* <Route path="/charts" element={<Chart />} /> */}
         </Routes>
       </div>
