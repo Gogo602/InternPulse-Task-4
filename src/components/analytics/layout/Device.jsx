@@ -1,4 +1,4 @@
-import { deviceData } from "../../data";
+import { deviceData } from '../../../../data'
 
 export default function Device() {
   return (

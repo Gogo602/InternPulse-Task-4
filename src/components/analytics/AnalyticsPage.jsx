@@ -4,7 +4,7 @@ import { Search } from "lucide-react";
 
 export default function AnalyticsPage() {
   return (
-    <div className="bg-slate-100 p-7.5 max-w-[1400px] mx-auto">
+    <div className="bg-slate-100 p-7.5 max-w-[1400px] ml-60">
       <header className="flex gap-25 items-center mb-6">
         <h1 className="text-2xl font-semibold text-purple-600">Analytics</h1>
         <div className="relative">

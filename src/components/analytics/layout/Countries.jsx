@@ -1,4 +1,5 @@
-import { countries } from "../../data";
+import { countries } from '../../../../data';
+
 
 export default function Countries() {
   return (

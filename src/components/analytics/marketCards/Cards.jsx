@@ -1,5 +1,5 @@
 import Card from "./Card";
-import { cardData } from "../../data";
+import { cardData } from '../../../../data'
 import { ArrowUp, ArrowDown } from "lucide-react";
 
 export default function Cards() {

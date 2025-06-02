@@ -1,33 +1,36 @@
 import {
-  createBrowserRouter,
-  createRoutesFromElements,
-  RouterProvider,
-  Route
+  Route,
+  Routes
 } from 'react-router-dom'
-import Login from './frontPage/Login'
-import SignUp from './frontPage/SignUp'
+import SignUp from './components/frontPage/SignUp'
 import Dashboard from './components/Dashboard'
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import NewProduct from './Products/Newproduct/Newproduct';
-import EditProduct from './Products/Editproduct/Editproduct';
-import {BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import SideBar from './components/scrollBar/SideBar'
+import AnalyticsPage from './components/analytics/AnalyticsPage';
 import ProfileOverview from './components/profile/overview/ProfileOverview'
 import Teams from './components/profile/teams/Teams'
-import AllProjects from './components/profile/allProjects/AllProjects'
+import AllProjects from './components/profile/allProjects/AllProjects';
+
+
 
 
 const App = () => {
-    const router = createBrowserRouter(
-    createRoutesFromElements(
-      <Route>
-        <Route path='/' element={<Login />} />
-        <Route path='/signup' element={<SignUp />} />
-        <Route path='/dashboard' element={<Dashboard />}/>
-      </Route>
-    )
-  );
-  return <RouterProvider router={router} />;
+  return (
+    <div className='flex items-center'>
+      <SideBar />
+      <div>
+        <Routes>
+          <Route path='/signup' element={<SignUp />} />
+          <Route path='/dashboard' element={<Dashboard />} />
+          <Route path='/analytics' element={<AnalyticsPage />} />
+          <Route path='/profileoverview' element={<ProfileOverview/>}/>
+          <Route path='/teams' element={<Teams/>}/>
+          <Route path='/allprojects' element={<AllProjects/>}/>
+        </Routes>
+      </div>
+    
+  </div>
+)
+
 };
 
 export default App;

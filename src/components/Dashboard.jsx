@@ -2,14 +2,16 @@ import Header from './Header';
 import StatsCard from './StatsCard'; 
 import ChartCard from './ChartCard';
 import EarningItemCard from './EarningItemCard';
-import ImpressionCard from './ImpressionCard';
+import ImpressionCard from './ImpressionCard'
 import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts'
 
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-100 p-4 lg:p-8"> {/* Increased padding for larger screens */}
-      <Header />
+    <div className="min-h-screen bg-gray-100 p-4 lg:p-8 ml-60"> {/* Increased padding for larger screens */}
+      <Header
+        name='Dashboard'
+      />
 
       <main className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
         {/* Top Row */}
@@ -18,7 +20,7 @@ function App() {
             title="Active users right now"
             value="300"
             description="Page views per minute"
-            chartType="bar" // or bar
+            chartType="bar" // or bar  
             chartData={[ /* ... data for the small line chart */ ]}
             bgColor="bg-white" 
             textColor="text-purple-600"
@@ -108,11 +110,7 @@ function App() {
 
         {/* Fourth Row - Impression Chart */}
         <div className="lg:col-span-1"> 
-          <ImpressionCard
-            title="Impression"
-            chartData={[ /* ... data for bar chart */ ]}
-            bgColor="bg-white"
-          />
+          <ImpressionCard/>
         </div>
       </main>
     </div>

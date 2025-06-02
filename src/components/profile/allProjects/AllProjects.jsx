@@ -10,7 +10,7 @@ const AllProjects = () => {
           <Header
             name='All Projects'
           />
-          <div className='border border-gray-200 bg-white rounded-md'>
+          <div className='border border-gray-200 bg-white rounded-md ml-60'>
               <div className='px-8 py-10 flex flex-wrap space-y-5 items-center justify-between'>
                   <div className='flex items-center space-x-5 font-bold'>
                       <img src={assets.Frame2} alt="Sayo Kravits" className='w-8'/>

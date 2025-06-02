@@ -1,7 +1,7 @@
-import mobileIcon from "./assets/mobile.png";
-import desktopIcon from "./assets/desktop.png";
-import tabletIcon from "./assets/tablet.png";
-import tvIcon from "./assets/tv.png";
+import mobileIcon from './src/assets/mobile.png';
+import desktopIcon from "./src/assets/desktop.png";
+import tabletIcon from "./src/assets/tablet.png";
+import tvIcon from "./src/assets/tv.png";
 
 export const cardData = [
   {

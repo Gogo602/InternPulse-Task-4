@@ -2,9 +2,9 @@ import React from 'react'
 
 const Header = ({name}) => {
   return (
-    <div className='px-5 py-5'>
+    <div className='px-5 py-5 ml-60'>
           <div className='flex items-center space-x-5 md:space-x-60'>
-              <h1>{name}</h1>
+              <h1 className='font-bold text-3xl'>{name}</h1>
               <input
                   type="text"
                   name=""

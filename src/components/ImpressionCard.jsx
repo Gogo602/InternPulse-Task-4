@@ -4,7 +4,7 @@ import React from 'react';
 import { BarChart, Bar, XAxis, Tooltip, ResponsiveContainer } from 'recharts';
 // You might need to adjust the imports based on the exact Recharts components you use.
 
-function ImpressionCard({ title, chartData, bgColor = "bg-white" }) {
+const ImpressionCard = ({ title, chartData, bgColor = "bg-white" }) => {
   // Example data structure, adjust to match your actual data source
   const data = [
   {
@@ -52,7 +52,7 @@ function ImpressionCard({ title, chartData, bgColor = "bg-white" }) {
 ];
 
 
-  const ImpressionCard = () => {
+  const Impression = () => {
   return (
     <ResponsiveContainer width="100%" height="100%">
       <LineChart width={300} height={100} data={data}>

@@ -1,4 +1,4 @@
-import GraphUi from "../ui/GraphUi";
+import GraphUi from "../../ui/GraphUi";
 import {
   LineChart,
   Line,
