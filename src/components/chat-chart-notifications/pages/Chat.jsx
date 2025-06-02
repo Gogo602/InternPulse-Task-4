@@ -1,14 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import ChatUsers from '../component/ChatUsers'
-import Jacob from '../assets/JacobJones.png'
-import Leslie from '../assets/Leslie.png'
-import Pena from '../assets/Pena.png'
-import Murphy from '../assets/Murphy.png'
-import Warren from '../assets/warren.png'
-import Mavin from '../assets/JacobJones.png'
-import Chats from '../component/Chats'
-import Practice from '../component/Practice'
-import { users } from '../component/Users'
+import ChatUsers from '../ChatUsers'
+import Chats from '../Chats'
+import { users } from '../Users'
 
 const Chat = () => {
    const [searchInput, setSearchInput] = useState('');
@@ -40,7 +33,7 @@ const handleUserSelect = (id) => {
 
  
   return (
-    <div className='flex gap-6 md:flex-row flex-col pb-20'>
+    <div className='flex gap-6 md:flex-row flex-col pb-20 ml-62'>
         <div className='md:w-[30%] flex flex-col gap-4'>
             <div>
                 <input type="text" 

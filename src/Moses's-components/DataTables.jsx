@@ -3,7 +3,7 @@ import "./styles.css"
 
 export const DataTables = () => {
 	return (
-		<section className='flex justify-center flex-col items-start max-w-[72.625rem] bg-surface-white rounded-[0.5rem] shadow-[0px_0px_4px_0px_rgba(0,0,0,0.15)] font-Lato shrink-0'>
+		<section className='flex justify-center flex-col items-start max-w-[72.625rem] bg-surface-white rounded-[0.5rem] shadow-[0px_0px_4px_0px_rgba(0,0,0,0.15)] font-Lato shrink-0 ml-60'>
 			<div className='h-[4.375rem] min-lg:p-[1rem] grid grid-cols-4 min-md:grid-cols-5 min-lg:grid-cols-6 w-full items-center border-t-1 border-t-background border-b-1 border-b-background text-dark text-[1.125rem] font-[500] gap-[1.5rem]'>
 				<span className='text-center min-lg:text-start'>Name </span>
 				<span>Position </span>

@@ -1,9 +1,9 @@
 import React from 'react';
 import "./styles.css"
 
-export const Calendar = () => {
+ const Calendar = () => {
 	return (
-		<section className='flex justify-center gap-[2rem] font-Lato p-[1rem] bg-background'>
+		<section className='flex justify-center gap-[2rem] font-Lato p-[1rem] bg-background ml-60'>
 			<div className='calendar-col1 bg-surface-white'>
 				<p className='text-dark text-[1rem] font-[500]'>Details Day</p>
 				<p className='text-[0.88875rem] text-light'>
@@ -315,3 +315,6 @@ const EventCard = ({ tag, location, time, color, bgTimeTag, date }) => {
 		</div>
 	);
 };
+
+
+export default Calendar;

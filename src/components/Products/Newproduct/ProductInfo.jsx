@@ -5,7 +5,7 @@ const ProductInfo = () => {
   const navigate = useNavigate();
   const handleNext = (e) => {
     e.preventDefault();
-    navigate('/newproduct/media');
+    navigate('/new-product/media');
   };
 
   return (
@@ -28,7 +28,7 @@ const ProductInfo = () => {
         </form>
       </div>
 
-      <div className='flex items-center justify-center my-5'>
+      <div className='flex items-center justify-center my-5 px-10'>
         <div className='flex gap-4 md:gap-[30px] mt-3 items-center flex-wrap' id='progress-indicator'>
           <div className='flex items-center gap-3'>
             <span className="bg-[#6E39CB] w-[25px] h-[25px] flex items-center justify-center text-center text-white rounded-full">1</span>

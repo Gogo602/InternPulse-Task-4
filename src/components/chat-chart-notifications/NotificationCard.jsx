@@ -17,7 +17,7 @@ const NotificationCard = ({text,bgColor})=>{
         <div>
             <div 
              style={{ backgroundColor: backgroundColors[bgColor] || '#ccc' }}
-            className=' flex text-white px-2 py-4 justify-between w-[471px] items-center rounded '>
+            className=' flex text-white px-2 py-4 justify-between w-[471px] items-center rounded'>
                 <h1 className='text-[12px]'>{text}</h1>
                 <MdCancel />
             </div>

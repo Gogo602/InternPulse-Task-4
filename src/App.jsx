@@ -17,6 +17,18 @@ import Security from './components/settings/Security'
 import Setting from './components/settings/Setting'
 import NewProject from './projecttimeline/newproject';
 import TimeLine from './projecttimeline/timeline';
+import { PricingPage } from './Moses\'s-components/PricingPage';
+import { DataTables } from './Moses\'s-components/DataTables';
+import Calendar from './Moses\'s-components/Calendar';
+import Chats from './components/chat-chart-notifications/pages/Chat';
+import Notification from './components/chat-chart-notifications/pages/Notification';
+import Newproduct from './components/Products/Newproduct/Newproduct'
+import Editproduct from './components/Products/Editproduct/Editproduct'
+import Media from './components/Products/Newproduct/Media';
+import ProductInfo from './components/Products/Newproduct/ProductInfo';
+import Social from './components/Products/Newproduct/Social';
+import Pricing from './components/Products/Newproduct/Pricing';
+// import Chart from './components/chat-chart-notifications/pages/Chart'
 
 
 
@@ -46,6 +58,21 @@ const App = () => {
           <Route path="/setting" element={<Setting />} />
           <Route path="/new-project" element={<NewProject />} />
           <Route path="/timeline" element={<TimeLine />} />
+          <Route path="/pricing-page" element={<PricingPage />} />
+          <Route path="/data-tables" element={<DataTables />} />
+          <Route path="/calendar" element={<Calendar />} />
+          <Route path="/Chat" element={<Chats />} />
+          <Route path="/notification" element={<Notification />} />
+          <Route path="/new-product" element={<Newproduct />} >
+            <Route path='media' element={<Media />}/>
+            <Route path='product' element={<ProductInfo />}/>
+            <Route path='social' element={<Social />}/>
+            <Route path='pricing' element={<Pricing />}/>
+            <Route />
+          </Route>
+          <Route path="/edit-product" element={<Editproduct />} />
+          
+          {/* <Route path="/charts" element={<Chart />} /> */}
         </Routes>
       </div>
     

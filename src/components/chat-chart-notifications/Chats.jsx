@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { users } from './Users';
 
-const Chats = ({ selectedUser }) => {
+const Chats = () => {
   const [messages, setMessages] = useState([
                                         { sender: 1,  text: 'Hey How Are you?' },
                                          {sender:2, text:"I am good"}

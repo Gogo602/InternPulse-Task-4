@@ -1,6 +1,6 @@
 import React from 'react'
-import NotificationCard from '../component/NotificationCard';
-import NotificationToast from '../component/NotificationToast';
+import NotificationCard from '../NotificationCard';
+import NotificationToast from '../NotificationToast';
 
 
 const backgroundColors ={
@@ -42,7 +42,7 @@ const Notification = () => {
 
   return (
     <div className='pb-40 lato'>
-        <div className='flex flex-col gap-8 justify-center  items-center'>
+        <div className='flex flex-col gap-8 justify-center  items-center ml-60'>
 
          <div className='bg-white w-[531px] flex flex-col gap-6 p-6 rounded-[8px]'>
             {/* sub header starts here */}

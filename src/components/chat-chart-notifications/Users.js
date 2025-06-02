@@ -1,9 +1,9 @@
-import Jacob from '../assets/JacobJones.png'
-import Leslie from '../assets/Leslie.png'
-import Pena from '../assets/Pena.png'
-import Murphy from '../assets/Murphy.png'
-import Warren from '../assets/warren.png'
-import Mavin from '../assets/JacobJones.png'
+import Jacob from '../../assets/JacobJones.png'
+import Leslie from '../../assets/Leslie.png'
+import Pena from '../../assets/Pena.png'
+import Murphy from '../../assets/Murphy.png'
+import Warren from '../../assets/warren.png'
+import Mavin from '../../assets/JacobJones.png'
 
 
 export const users = [

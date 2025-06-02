@@ -2,7 +2,7 @@ import React from 'react'
 
 const Editproduct = () => {
   return (
-    <div className='bg-gray-100 min-h-screen'>
+    <div className='bg-gray-100 min-h-screen ml-60'>
         <div className="flex flex-col md:flex-row gap-4 md:gap-[100px] items-center my-3 py-5 px-3 md:px-5">
             <div className='items-center lg:ml-32'>
                 <h1 className='text-2xl font-bolder text-[#6E39CB] font-[600] '>Edit Product</h1>

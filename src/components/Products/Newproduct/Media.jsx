@@ -4,7 +4,7 @@ const Media = () => {
   const navigate = useNavigate();
   const handleNext = (e) => {
     e.preventDefault();
-    navigate('/newproduct/social');
+    navigate('/new-product/social');
   };
 
   return (

@@ -4,7 +4,7 @@ const Social = () => {
   const navigate = useNavigate();
   const handleNext = (e) => {
     e.preventDefault();
-    navigate('/newproduct/pricing');
+    navigate('/new-product/pricing');
   };
 
   return (
