@@ -1,13 +1,15 @@
-import HomeIcon from "@mui/icons-material/Home";
-import FileOpenIcon from "@mui/icons-material/FileOpen";
-import AppsIcon from "@mui/icons-material/Apps";
-import StoreIcon from "@mui/icons-material/Store";
-import VerifiedUserIcon from "@mui/icons-material/VerifiedUser";
+// import HomeIcon from "@mui/icons-material/Home";
+// import FileOpenIcon from "@mui/icons-material/FileOpen";
+// import AppsIcon from "@mui/icons-material/Apps";
+// import StoreIcon from "@mui/icons-material/Store";
+// import VerifiedUserIcon from "@mui/icons-material/VerifiedUser";
+
+import { FaAppStoreIos, FaHome, FaOpencart, FaStore, FaUniversity } from "react-icons/fa";
 
 export const SideBarData = [
   {
     title: "Home",
-    icon: <HomeIcon />,
+    icon: <FaHome />,
     children: [
       {
         title: "Dashboard",
@@ -21,7 +23,7 @@ export const SideBarData = [
   },
   {
     title: "Pages",
-    icon: <FileOpenIcon />,
+    icon: <FaOpencart />,
     children: [
       {
         title: "Profile",
@@ -111,7 +113,7 @@ export const SideBarData = [
   },
   {
     title: "Applications",
-    icon: <AppsIcon />,
+    icon: <FaAppStoreIos />,
     children: [
       {
         title: "Kanban",
@@ -133,7 +135,7 @@ export const SideBarData = [
   },
   {
     title: "E-commerce",
-    icon: <StoreIcon />,
+    icon: <FaStore />,
     children: [
       {
         title: "Overview",
@@ -173,7 +175,7 @@ export const SideBarData = [
   },
   {
     title: "Authentication",
-    icon: <VerifiedUserIcon />,
+    icon: <FaUniversity />,
     path: "/Authentication",
   },
 ];

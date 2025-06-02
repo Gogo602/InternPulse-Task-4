@@ -13,7 +13,7 @@ export default function SettingN() {
 
 function SettingHeading() {
   return (
-    <div className="flex justify-between items-start w-full mb-8">
+    <div className="flex items-center justify-between w-full mb-8 ml-60">
       <div className="flex flex-col items-start">
         <h1 className="text-2xl font-bold mb-2">Setting Details</h1>
         <span className="text-base text-gray-500">
@@ -43,7 +43,7 @@ function Content() {
 
 function Main() {
   return (
-    <main className="bg-white rounded-xl shadow">
+    <main className="bg-white rounded-xl shadow ml-60">
       <form className="form">
         <h2 className="p-8 border-b border-[#f4f5f9] text-xl font-medium">
           Personal Information

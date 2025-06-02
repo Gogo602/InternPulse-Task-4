@@ -1,5 +1,5 @@
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { useState } from "react";
+import { FaExpand } from "react-icons/fa";
 
 export default function SidebarItem({ item }) {
   const [open, setOpen] = useState(false);
@@ -37,11 +37,11 @@ export default function SidebarItem({ item }) {
             }
             style={{ rotate: open ? "180deg" : "0deg" }}
           >
-            <ExpandMoreIcon />
+            <FaExpand />
           </span>
         </div>
         <div
-          className="content flex flex-col gap-2 pl-5 pt-2 text-xs pt-1 overflow-hidden"
+          className="content flex flex-col gap-2 pl-5  text-xs pt-1 overflow-hidden"
           style={{ height: open ? "100%" : "0" }}
         >
           {item.children.map((child, key) => (

@@ -6,7 +6,7 @@ import { FaPlus } from "react-icons/fa6";
 
 function PaymentNew() {
   return (
-    <div className="min-h-screen bg-gray-100 font-inter flex items-center justify-center p-6">
+    <div className="min-h-screen bg-gray-100 font-inter flex items-center justify-center p-6 ml-60">
       <div className="w-full max-w-6xl">
         <h2 className="text-2xl font-black text-gray-900 mb-4" >Account/Invoice</h2>
         <h2 className="font-semibold mb-3 text-2xl text-gray-600" >Payment Details</h2>
