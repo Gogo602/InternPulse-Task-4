@@ -8,7 +8,7 @@ import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'rec
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-100 p-4 lg:p-8 md:ml-60"> {/* Increased padding for larger screens */}
+    <div className="min-h-screen bg-gray-100 sm:ml-60 z-0 p-4 lg:p-8 "> {/* Increased padding for larger screens */}
       <Header
         name='Dashboard'
       />
