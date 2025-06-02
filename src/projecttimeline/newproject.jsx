@@ -4,7 +4,7 @@ import { FaCloudDownloadAlt } from "react-icons/fa";
 
 const NewProject = () => {
   return (
-    <div className='bg-[#EFEEEE] p-4 lg:p-8 md:p-6'>
+    <div className='bg-[#EFEEEE] p-4 lg:p-8 md:p-6 ml-60'>
       <div className='md:flex md:gap-44 items-center p-2'>
         <h2 className='text-purple-700 md:text-xl lg:text-3xl font-bold pb-2 md:pb-0'>Project/New project</h2>
         <label htmlFor='search' className='flex justify-between items-center bg-white p-2 mb-4 md:mb-0 md:p-2.5 cursor-pointer rounded-full shadow-md md:w-[300px]'>

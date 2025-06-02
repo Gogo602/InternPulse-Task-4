@@ -1,4 +1,4 @@
-import Header from './Header';
+import Header from '../Header';
 import StatsCard from './StatsCard'; 
 import ChartCard from './ChartCard';
 import EarningItemCard from './EarningItemCard';

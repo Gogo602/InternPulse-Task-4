@@ -3,7 +3,7 @@ import {
   Routes
 } from 'react-router-dom'
 import SignUp from './components/frontPage/SignUp'
-import Dashboard from './components/Dashboard'
+import Dashboard from './components/dashboard/Dashboard'
 import SideBar from './components/scrollBar/SideBar'
 import AnalyticsPage from './components/analytics/AnalyticsPage';
 import ProfileOverview from './components/profile/overview/ProfileOverview'
@@ -15,6 +15,8 @@ import Billing from './components/settings/Billing'
 import Invoice from './components/settings/Invoice'
 import Security from './components/settings/Security'
 import Setting from './components/settings/Setting'
+import NewProject from './projecttimeline/newproject';
+import TimeLine from './projecttimeline/timeline';
 
 
 
@@ -42,6 +44,8 @@ const App = () => {
           <Route path="/invoice" element={<Invoice />} />
           <Route path="/security" element={<Security />} />
           <Route path="/setting" element={<Setting />} />
+          <Route path="/new-project" element={<NewProject />} />
+          <Route path="/timeline" element={<TimeLine />} />
         </Routes>
       </div>
     
