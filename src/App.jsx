@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom";
+import { createContext, useState } from "react";
 import SignUp from "./components/frontPage/SignUp";
 import Login from "./components/frontPage/Login";
 import Forgot from "./components/frontPage/forgot";
@@ -31,53 +32,60 @@ import ProductListPage from "./pages/ProductList/ProductListPage";
 import OrderListPage from "./pages/OrderList/OrderListPage";
 import OrderDetailsPage from "./pages/OrderDetails/OrderDetailsPage";
 
+export const BurgerContext = createContext();
 const App = () => {
+  const [burger, setBurger] = useState(true);
+  const toggleSidebar = () => {
+    setBurger(!burger);    
+  };
   return (
-    <div className="flex w-screen items-center justify-between">
-      <div className="fixed min-h-screen sm:top-0  sm:left-0">
-        <SideBar />
+    <BurgerContext.Provider value={[burger, toggleSidebar]}>
+      <div className="flex w-screen items-center justify-between">
+        <div className="fixed min-h-screen top-0 left-0">
+          <SideBar />
+        </div>
+        <div className="w-full">
+          <Routes>
+            <Route path="/" element={<Dashboard />} />
+            <Route path="/Reports" element={<Reports />} />
+            <Route path="/Users" element={<Users />} />
+            <Route path="/authentication" element={<SignUp />} />
+            <Route path="/Signin" element={<Login />} />
+            <Route path="/forgot-password" element={<Forgot />} />
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/analytics" element={<AnalyticsPage />} />
+            <Route path="/profileoverview" element={<ProfileOverview />} />
+            <Route path="/teams" element={<Teams />} />
+            <Route path="/allprojects" element={<AllProjects />} />
+            <Route path="/reports" element={<Reports />} />
+            <Route path="/new-user" element={<Users />} />
+            <Route path="/billing" element={<Billing />} />
+            <Route path="/invoice" element={<Invoice />} />
+            <Route path="/security" element={<Security />} />
+            <Route path="/setting" element={<Setting />} />
+            <Route path="/new-project" element={<NewProject />} />
+            <Route path="/timeline" element={<TimeLine />} />
+            <Route path="/pricing-page" element={<PricingPage />} />
+            <Route path="/data-tables" element={<DataTables />} />
+            <Route path="/calendar" element={<Calendar />} />
+            <Route path="/Chat" element={<Chats />} />
+            <Route path="/notification" element={<Notification />} />
+            <Route path="/new-product" element={<Newproduct />}>
+              <Route path="media" element={<Media />} />
+              <Route path="product" element={<ProductInfo />} />
+              <Route path="social" element={<Social />} />
+              <Route path="pricing" element={<Pricing />} />
+              <Route />
+            </Route>
+            <Route path="/edit-product" element={<Editproduct />} />
+            <Route path="/product-list" element={<ProductListPage />} />
+            <Route path="/order-list" element={<OrderListPage />} />
+            <Route path="/order-detail" element={<OrderDetailsPage />} />
+            {/* <Route path="/charts" element={<Chart />} /> */}
+          </Routes>
+        </div>
       </div>
-      <div className="w-full">
-        <Routes>
-          <Route path="/" element={<Dashboard />} />
-          <Route path="/Reports" element={<Reports />} />
-          <Route path="/Users" element={<Users />} />
-          <Route path="/authentication" element={<SignUp />} />
-          <Route path="/Signin" element={<Login />} />
-          <Route path="/forgot-password" element={<Forgot />} />
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/analytics" element={<AnalyticsPage />} />
-          <Route path="/profileoverview" element={<ProfileOverview />} />
-          <Route path="/teams" element={<Teams />} />
-          <Route path="/allprojects" element={<AllProjects />} />
-          <Route path="/reports" element={<Reports />} />
-          <Route path="/new-user" element={<Users />} />
-          <Route path="/billing" element={<Billing />} />
-          <Route path="/invoice" element={<Invoice />} />
-          <Route path="/security" element={<Security />} />
-          <Route path="/setting" element={<Setting />} />
-          <Route path="/new-project" element={<NewProject />} />
-          <Route path="/timeline" element={<TimeLine />} />
-          <Route path="/pricing-page" element={<PricingPage />} />
-          <Route path="/data-tables" element={<DataTables />} />
-          <Route path="/calendar" element={<Calendar />} />
-          <Route path="/Chat" element={<Chats />} />
-          <Route path="/notification" element={<Notification />} />
-          <Route path="/new-product" element={<Newproduct />}>
-            <Route path="media" element={<Media />} />
-            <Route path="product" element={<ProductInfo />} />
-            <Route path="social" element={<Social />} />
-            <Route path="pricing" element={<Pricing />} />
-            <Route />
-          </Route>
-          <Route path="/edit-product" element={<Editproduct />} />
-          <Route path="/product-list" element={<ProductListPage />} />
-          <Route path="/order-list" element={<OrderListPage />} />
-          <Route path="/order-detail" element={<OrderDetailsPage />} />
-          {/* <Route path="/charts" element={<Chart />} /> */}
-        </Routes>
-      </div>
-    </div>
+    </BurgerContext.Provider>
   );
 };
 

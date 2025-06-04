@@ -2,7 +2,7 @@ import { useState } from "react";
 import { FaExpand } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
 
-export default function SidebarItem({ item }) {
+export default function SidebarItem({ item, state }) {
   const [open, setOpen] = useState(false);
   const location = useLocation();
 
@@ -33,9 +33,7 @@ export default function SidebarItem({ item }) {
             </div>
             <div
               className={
-                open
-                  ? "text-[#6E39CB] text-sm block"
-                  : "text-sm hidden sm:block"
+                open ? "text-[#6E39CB] text-sm block" : "text-sm block"
               }
             >
               {item.title}
@@ -57,16 +55,19 @@ export default function SidebarItem({ item }) {
           style={{ height: open ? "100%" : "0" }}
         >
           {item.children.map((child, key) => (
-            <SidebarItem key={key} item={child} />
+            <div key={key} onClick={() => state[1](!state[0])}>
+              <SidebarItem key={key} item={child} />
+            </div>
           ))}
         </div>
       </div>
     );
   } else {
     return (
-      <Link
-        to={item.path || "#"}
-        className={`
+      <div onClick={() => state[1](!state[0])} className="z-1">
+        <Link
+          to={item.path || "#"}
+          className={`
           text-[1.2em] flex justify-between items-center h-10 w-full rounded-md no-underline transition-colors duration-200
           ${
             isActive
@@ -74,27 +75,30 @@ export default function SidebarItem({ item }) {
               : "text-[#3A3541] hover:bg-gray-200"
           }
         `}
-      >
-        <span className="flex items-center">
-          <div
-            className={
-              isActive
-                ? "w-10 flex items-center pl-1 text-white"
-                : "w-10 flex items-center pl-1"
-            }
-          >
-            {item.icon}
-          </div>
-          <div
-            className={
-              isActive ? "text-white text-sm block" : "text-sm hidden sm:block"
-            }
-          >
-            {" "}
-            {item.title}
-          </div>
-        </span>
-      </Link>
+        >
+          <span className="flex items-center">
+            <div
+              className={
+                isActive
+                  ? "w-10 flex items-center pl-1 text-white"
+                  : "w-10 flex items-center pl-1"
+              }
+            >
+              {item.icon}
+            </div>
+            <div
+              className={
+                isActive
+                  ? "text-white text-sm block"
+                  : "text-sm sm:block"
+              }
+            >
+              {" "}
+              {item.title}
+            </div>
+          </span>
+        </Link>
+      </div>
     );
   }
 }
