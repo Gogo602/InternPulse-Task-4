@@ -1,7 +1,7 @@
 import "/images/woman 1.png";
 const SignUp = () => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 w-screen h-screen  m-0 p-0 md:ml-60 ">
+    <div className="grid grid-cols-1 sm:grid-cols-2 h-screen  m-0 p-0 md:ml-60 ">
       <div className="w-full h-screen grid place-items-center ">
         <form className="flex flex-col gap-4 min-w-60 lg:w-[50%] max-w-90">
           <div className="mb-0">

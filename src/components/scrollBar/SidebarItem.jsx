@@ -1,8 +1,12 @@
 import { useState } from "react";
 import { FaExpand } from "react-icons/fa";
+import { Link, useLocation } from "react-router-dom";
 
 export default function SidebarItem({ item }) {
   const [open, setOpen] = useState(false);
+  const location = useLocation();
+
+  const isActive = location.pathname === item.path;
 
   if (item.children) {
     return (
@@ -27,13 +31,21 @@ export default function SidebarItem({ item }) {
             >
               {item.icon}
             </div>
-            <div className={open ? "text-[#6E39CB] text-sm block" : "text-sm hidden sm:block"}>
+            <div
+              className={
+                open
+                  ? "text-[#6E39CB] text-sm block"
+                  : "text-sm hidden sm:block"
+              }
+            >
               {item.title}
             </div>
           </span>
           <span
             className={
-              open ? "text-[#6E39CB] flex items-center hidden" : "flex items-center"
+              open
+                ? "text-[#6E39CB] flex items-center hidden"
+                : "flex items-center"
             }
             style={{ rotate: open ? "180deg" : "0deg" }}
           >
@@ -41,7 +53,7 @@ export default function SidebarItem({ item }) {
           </span>
         </div>
         <div
-          className="content flex flex-col gap-2 pl-5  text-xs pt-1 overflow-hidden"
+          className="content flex flex-col gap-2 pl-5 text-xs pt-1 overflow-hidden"
           style={{ height: open ? "100%" : "0" }}
         >
           {item.children.map((child, key) => (
@@ -52,30 +64,37 @@ export default function SidebarItem({ item }) {
     );
   } else {
     return (
-      <>
-        <a
-          href={item.path || "#"}
-          className="text-[#3A3541] items text-[1.2em] flex justify-between"
-          onClick={() => {
-              setOpen(!open)
-          }}
-        >
-          <span className="flex items-center">
-            <div
-              className={
-                open
-                  ? "w-10 flex items-center pl-1 text-[#6E39CB]"
-                  : "w-10 flex items-center pl-1"
-              }
-            >
-              {item.icon}
-            </div>
-            <div className={open ? "text-[#6E39CB] text-sm" : "text-sm hidden sm:block"}>
-              {item.title}
-            </div>
-          </span>
-        </a>
-      </>
+      <Link
+        to={item.path || "#"}
+        className={`
+          text-[1.2em] flex justify-between items-center h-10 w-full rounded-md no-underline transition-colors duration-200
+          ${
+            isActive
+              ? "bg-[#6E39CB] text-white"
+              : "text-[#3A3541] hover:bg-gray-200"
+          }
+        `}
+      >
+        <span className="flex items-center">
+          <div
+            className={
+              isActive
+                ? "w-10 flex items-center pl-1 text-white"
+                : "w-10 flex items-center pl-1"
+            }
+          >
+            {item.icon}
+          </div>
+          <div
+            className={
+              isActive ? "text-white text-sm block" : "text-sm hidden sm:block"
+            }
+          >
+            {" "}
+            {item.title}
+          </div>
+        </span>
+      </Link>
     );
   }
 }
