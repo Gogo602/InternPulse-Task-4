@@ -12,7 +12,7 @@ const SideBar = () => {
   return (
     <>
       <div
-        className="fixed right-4 top-2 sm:hidden"
+        className="fixed right-4 top-2 hidden sm:inline-block" //what i changed
         onClick={() => {
           toggleSidebar();
           console.log(burger);
