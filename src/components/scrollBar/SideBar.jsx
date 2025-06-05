@@ -8,7 +8,7 @@ import { useState, useContext } from "react";
 
 const SideBar = () => {
   const [burger, toggleSidebar] = useContext(BurgerContext);
-  const collapse = burger ? "flex" : "hidden";
+  const collapse = burger ? "flex" : "hidden"; //hidden:flex; that is the original order
   return (
     <>
       <div
