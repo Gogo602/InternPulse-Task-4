@@ -8,11 +8,11 @@ import { useState, useContext } from "react";
 
 const SideBar = () => {
   const [burger, toggleSidebar] = useContext(BurgerContext);
-  const collapse = burger ? "hidden" : "flex";
+  const collapse = burger ? "flex" : "hidden";
   return (
     <>
       <div
-        className="fixed right-4 top-2 hidden sm:inline-block" //what i changed
+        className="fixed right-4 top-2 sm:hidden" //what i changed
         onClick={() => {
           toggleSidebar();
           console.log(burger);
